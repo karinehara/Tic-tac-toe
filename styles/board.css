@@ -1,0 +1,74 @@
+/* Jogo de tic tac toe */
+
+/* Estilos do tabuleiro */
+#board{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#board .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#board .row .cell{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#board .row:nth-child(-n+2) .cell{
+    border-bottom: 2px solid #000;
+}
+
+#board .row .cell:nth-child(-n+2){
+    border-right: 2px solid #000;
+}
+
+p{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#message p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnReiniciar{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    background-color: #333;
+    margin-top: 1rem;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#btnReiniciar:hover{
+    background-color: #fff;
+    color: #000;
+}
